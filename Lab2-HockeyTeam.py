@@ -13,11 +13,17 @@
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
 
+    #obtaining user input for hockey team, wins and losses
+    hockeyTeam = input("Enter the name of your favorite team: ");
+    wins = input("How many wins do they have? ");
+    losses = input("How many games have they lost? ");
+    
+    #calculating the win/loss ratio 
+    winlossRatio = int(wins) / (int(wins) + int(losses));
 
 
-
-
-
+    #printing the results to the user of their teams wins, losses, and ratio
+    print("The {0} have {1} wins and {2} losses with a {3:.4} win precentage.".format(hockeyTeam, wins, losses, winlossRatio));
 
 
     # YOUR CODE ENDS HERE
